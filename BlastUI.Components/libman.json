@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "defaultProvider": "unpkg",
+  "libraries": [
+    {
+      "library": "@microsoft/fast-components@1.10.0",
+      "destination": "wwwroot/microsoft/fast-components/",
+      "files": [
+        "dist/fast-components.min.js",
+        "dist/fast-components.d.ts"
+      ]
+    },
+    {
+      "provider": "cdnjs",
+      "library": "open-iconic@1.1.1",
+      "destination": "wwwroot/open-iconic/",
+      "files": [
+        "font/css/open-iconic.min.css",
+        "font/fonts/open-iconic.woff",
+        "font/fonts/open-iconic.svg",
+        "font/fonts/open-iconic.ttf",
+        "font/fonts/open-iconic.otf",
+        "font/fonts/open-iconic.eot"
+      ]
+    }
+  ]
+}

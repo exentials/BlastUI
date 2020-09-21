@@ -1,0 +1,21 @@
+﻿@import url('open-iconic/font/css/open-iconic.min.css');
+
+/*
+    This file is to show how CSS and other static resources (such as images) can be
+    used from a library project/package.
+*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+.expandCollapse {
+    color: var(--accent-fill-rest);    
+}
+
+.expandCollapse:hover {
+    color: var(--accent-fill-hover);
+}

@@ -1,0 +1,13 @@
+﻿@namespace BlastUI.Components
+@inherits ComponentBase
+<fast-anchor appearance="@Appearance" autofocus="@Autofocus" disabled="@Disabled">
+    @if (Start != null)
+    {
+        <slot name="start">@Start</slot>
+    }
+    @ChildContent
+    @if (End != null)
+    {
+        <slot name="end">@End</slot>
+    }
+</fast-anchor>

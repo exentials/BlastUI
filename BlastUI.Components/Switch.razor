@@ -1,0 +1,7 @@
+﻿@namespace BlastUI.Components
+@inherits InputCheckbox
+<fast-switch checked="@Value" @onclick="Toggle" readOnly="@ReadOnly" disabled="@Disabled">
+    @Caption
+    <span slot="checked-message">@CheckedMessage</span>
+    <span slot="unchecked-message">@UncheckedMessage</span>
+</fast-switch>

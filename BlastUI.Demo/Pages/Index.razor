@@ -1,0 +1,45 @@
+﻿@page "/"
+
+<h2>Hello Blast UI!</h2>
+<Divider></Divider>
+
+<h3>Accordion</h3>
+<Divider></Divider>
+
+<Accordion ExpandMode="@AccordionExpandMode.Multi">
+    <AccordionItem>
+        <Heading>Title 1</Heading>
+        <ChildContent>Item 1</ChildContent>
+    </AccordionItem>
+    <AccordionItem>
+        <Heading>Title 2</Heading>
+        <ChildContent>Item 2</ChildContent>
+    </AccordionItem>
+    <AccordionItem>
+        <Heading>Title 3</Heading>
+        <ChildContent>Item 3</ChildContent>
+    </AccordionItem>
+    <AccordionItem>
+        <Heading>Title 4</Heading>
+        <ChildContent>Item 4</ChildContent>
+    </AccordionItem>
+</Accordion>    
+
+<h3>Badge</h3>
+<Divider></Divider>
+
+<Badge>Badge 1</Badge><Badge>Badge 2</Badge>
+
+<h3>Buttons</h3>
+<Divider></Divider>
+
+<p>    
+    <ButtonAction>Neutral Action</ButtonAction>
+    <ButtonAction Appearance="accent">Accent Action</ButtonAction>
+</p>
+
+<p>
+    <ButtonLink>Neutral Link</ButtonLink>    
+    <ButtonLink Appearance="accent">Accent Link</ButtonLink>    
+</p>
+

@@ -1,0 +1,22 @@
+﻿@namespace BlastUI.Components
+@inherits ComponentBase
+<fast-accordion-item id="@Id" headinglevel="@HeadingLevel" expandend="@Expanded" @onclick="Toggle">    
+    @ChildContent
+    <div slot="heading">@Heading</div>
+    @if (ExpandIcon == null)  
+    {
+        <span slot="expanded-icon"><Icon Name="collapse-up" CssClass="expandCollapse"></Icon></span>        
+    } 
+    else
+    {
+        <span slot="expanded-icon">@ExpandIcon</span>
+    }
+    @if (CollapseIcon == null)  
+    {
+        <span slot="collapsed-icon"><Icon Name="collapse-down" CssClass="expandCollapse"></Icon></span>
+    } 
+    else
+    {
+        <span slot="collapsed-icon">@CollapseIcon</span>
+    }
+</fast-accordion-item>

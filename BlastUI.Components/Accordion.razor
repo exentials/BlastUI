@@ -1,0 +1,7 @@
+﻿@namespace BlastUI.Components
+@inherits ComponentBase
+<fast-accordion expand-mode="@Utils.GetEnumName(_expandMode)">
+    <CascadingValue Value="this">
+            @ChildContent            
+    </CascadingValue>    
+</fast-accordion>
