@@ -20,4 +20,9 @@
     <Folder Include="wwwroot\microsoft\fast-components\dist\" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <None Include="wwwroot\tsconfig.json" />
+  </ItemGroup>
+
 </Project>

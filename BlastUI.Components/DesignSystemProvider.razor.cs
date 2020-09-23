@@ -17,16 +17,18 @@ namespace BlastUI.Components
 
         [Parameter] public RenderFragment ChildContent { get; set; }
 
+        private ElementReference fastDesignSystemProvider;
 
-        protected override async Task OnAfterRenderAsync(bool firstRender)
+        protected override Task OnAfterRenderAsync(bool firstRender)
         {
             if (firstRender)
             {
                 if (!string.IsNullOrEmpty(AccentBaseColor))
                 {
-                    var accentPalette = await JSRuntime.InvokeAsync<object>("blastUI.getPalette", AccentBaseColor);
+                    // var accentPalette = await JSRuntime.InvokeAsync<object>("blastUI.getPalette", AccentBaseColor);
                 }
             }
+            return base.OnAfterRenderAsync(firstRender);
         }
     }
 
