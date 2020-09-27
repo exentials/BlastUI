@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0",
+  "name": "asp.net",
+  "private": true,
+  "scripts": {
+    "build": "webpack --mode=production",
+    "dev": "webpack-dev-server"
+  },
+  "dependencies": {
+    "@microsoft/fast-colors": "^5.1.0",
+    "@microsoft/fast-components": "^1.10.0",
+    "@microsoft/fast-element": "^0.18.0",
+    "lodash-es": "^4.17.15"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "ts-loader": "^8.0.4",
+    "typescript": "^4.0.3",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "pretty": true,
+    "target": "ES2015",
+    "module": "ES2015",
+    "moduleResolution": "Node",
+    "experimentalDecorators": true,
+    "noEmitOnError": true,
+    "strict": true,
+    "outDir": "wwwroot",
+    "rootDir": "src",
+    "lib": [ "ES5", "ES6", "DOM" ]
+  },
+  "exclude": [
+    "node_modules",
+    "wwwroot"
+  ],
+  "include": ["src", "webpack.config.js"]
+}

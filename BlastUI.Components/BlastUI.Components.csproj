@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Razor">
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
@@ -6,9 +6,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="AccordionItem.razor.cs~RF2cb486b4.TMP" />
+    <Content Remove="libman.json" />
+    <Content Remove="package-lock.json" />
+    <Content Remove="package.json" />
+    <Content Remove="src\package.json" />
+    <Content Remove="tsconfig.json" />
   </ItemGroup>
-
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components" Version="3.1.8" />
@@ -17,12 +20,20 @@
 
 
   <ItemGroup>
+    <Folder Include="wwwroot\js\" />
     <Folder Include="wwwroot\microsoft\fast-components\dist\" />
   </ItemGroup>
 
 
   <ItemGroup>
-    <None Include="wwwroot\tsconfig.json" />
+    <None Include="libman.json" />
+    <None Include="package.json" />
+    <None Include="tsconfig.json" />
   </ItemGroup>
+
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="npm run build" />
+  </Target>
 
 </Project>

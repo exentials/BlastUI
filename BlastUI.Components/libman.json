@@ -22,22 +22,6 @@
         "font/fonts/open-iconic.otf",
         "font/fonts/open-iconic.eot"
       ]
-    },
-    {
-      "library": "@microsoft/fast-foundation@1.7.2",
-      "destination": "wwwroot/microsoft/fast-foundation/",
-      "files": [
-        "LICENSE",
-        "dist/fast-foundation.min.js"
-      ]
-    },
-    {
-      "library": "@microsoft/fast-element@0.18.0",
-      "destination": "wwwroot/microsoft/fast-element/",
-      "files": [
-        "LICENSE",
-        "dist/fast-element.min.js"
-      ]
     }
   ]
 }
