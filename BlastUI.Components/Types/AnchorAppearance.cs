@@ -4,12 +4,13 @@ using System.Text;
 
 namespace BlastUI.Components
 {
-    public enum  ButtonAppearance
+    public enum AnchorAppearance
     {
         Neutral,
         Outline,
         Lightweight,
         Stealth,
-        Accent
+        Accent,
+        Hypertext
     }
 }

@@ -14,6 +14,11 @@ namespace BlastUI.Components
             Type underlyingType = Nullable.GetUnderlyingType(type);
             var name = (underlyingType == null) ? Enum.GetName(type, value) : Enum.GetName(underlyingType, value);
             return name.ToLowerInvariant();
+        }        
+
+        static void Test()
+        {            
+            GetEnumName(AnchorAppearance.Lightweight);
         }
     }
 }

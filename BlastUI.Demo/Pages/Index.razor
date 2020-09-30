@@ -28,18 +28,44 @@
 <h3>Badge</h3>
 <Divider></Divider>
 
-<Badge>Badge 1</Badge><Badge>Badge 2</Badge>
+<p>
+    <Badge>Badge 1</Badge>
+    <Badge>Badge 2</Badge>
+</p>
 
 <h3>Buttons</h3>
 <Divider></Divider>
 
 <p>    
-    <ButtonAction>Neutral Action</ButtonAction>
-    <ButtonAction Appearance="accent">Accent Action</ButtonAction>
+    <ButtonAction Appearance="ButtonAppearance.Lightweight">Lightweight</ButtonAction>
+    <ButtonAction Appearance="ButtonAppearance.Neutral">Neutral</ButtonAction>
+    <ButtonAction Appearance="ButtonAppearance.Outline">Outline</ButtonAction>
+    <ButtonAction Appearance="ButtonAppearance.Accent">Primary</ButtonAction>
+    <ButtonAction Appearance="ButtonAppearance.Stealth">Stealth</ButtonAction>
 </p>
+
+<h3>Anchors</h3>
+<Divider></Divider>
 
 <p>
-    <ButtonLink>Neutral Link</ButtonLink>    
-    <ButtonLink Appearance="accent">Accent Link</ButtonLink>    
+    <Anchor Appearance="AnchorAppearance.Lightweight">Lightweight</Anchor>    
+    <Anchor Appearance="AnchorAppearance.Neutral">Neutral</Anchor>    
+    <Anchor Appearance="AnchorAppearance.Outline">Outline</Anchor>    
+    <Anchor Appearance="AnchorAppearance.Accent">Primary</Anchor>    
+    <Anchor Appearance="AnchorAppearance.Stealth">Stealth</Anchor>    
+    <Anchor Appearance="AnchorAppearance.Hypertext">Hypertext</Anchor>    
 </p>
 
+<h3>Checkbox</h3>
+<Divider></Divider>
+<p>
+    <Checkbox Checked="CheckboxValue">Check me!</Checkbox>
+    <Checkbox Checked="CheckboxValue" Disabled="true">I am disabled</Checkbox>
+    <Checkbox Checked="CheckboxValue" ReadOnly="true">I am readonly</Checkbox>
+</p>
+
+@code {
+
+    bool CheckboxValue { get; set; }
+
+}

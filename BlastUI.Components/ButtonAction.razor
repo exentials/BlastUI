@@ -1,7 +1,7 @@
 ﻿@namespace BlastUI.Components
 @inherits ComponentBase
 
-<fast-button appearance="@Appearance" autofocus="@Autofocus" disabled="@Disabled" @onclick="Click">
+<fast-button appearance="@Utils.GetEnumName(Appearance)" autofocus="@Autofocus" disabled="@Disabled" @onclick="Click">
     @if (Start != null)
     {
         <slot name="start">@Start</slot>
